@@ -1,0 +1,16 @@
+.recommendation-wrapper {
+  display: flex;
+  overflow-x: auto;
+  border: 1px solid black;
+}
+
+.recommendation-wrapper {
+  display: flex;
+  overflow-x: auto;
+  border: 1px solid black;
+}
+
+.recommendation-wrapper a {
+  display: block;
+  width: 300px;
+}

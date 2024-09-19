@@ -22,4 +22,6 @@
 @import "./components/doc-section.css" layer(compositions);
 @import "./components/doc-swatch.css" layer(compositions);
 /* Add new components below */
+@import "./compositions/utils.css" layer(compositions);
 @import "./components/doc-food-component.css" layer(compositions);
+@import "./components/home.components.css" layer(compositions);
