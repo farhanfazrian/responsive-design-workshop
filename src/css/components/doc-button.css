@@ -1,0 +1,4 @@
+.doc-button .doc-button--primary {
+  background-color: var(--color-orange-600);
+  border-color: transparent;
+}
