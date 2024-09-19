@@ -1,2 +1,21 @@
 .recipe-card {
+  text-decoration: none;
+  width: fit-content;
+  color: black;
+}
+
+.recipe-card__content {
+  position: relative;
+  width: fit-content;
+}
+
+.recipe-card__content .recipe-card__content__image {
+  margin-bottom: 8px;
+  border-radius: 12px;
+  width: 152px;
+  height: 202px;
+}
+
+.recipe-card__content .recipe-card__content__details span {
+  font-size: var(--Step-1, 13px);
 }

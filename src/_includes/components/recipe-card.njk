@@ -1,5 +1,13 @@
-{% macro recipeCard(url, imageUrl, altText) %}
-  <a href="{{ url }}">
-    <img src="{{ imageUrl }}" alt="{{ altText }}" />
+{% macro recipeCard(url, imageUrl, altText, title = "Default Title", ingredients = 6, duration = 20) %}
+  <a class="recipe-card" href="{{ url }}">
+    <div class="recipe-card__content">
+      <img class="recipe-card__content__image" src="{{ imageUrl }}" alt="{{ altText }}"/>
+      <h3 style="font-size: var(--Step-0,16px); font-weight:var(--font-semibold)">{{title}}</h3>
+      <div class="recipe-card__content__details">
+        <span>{{ingredients}} ingredients</span>
+        <span>•</span>
+        <span>{{duration}} min</span>
+      </div>
+    </div>
   </a>
 {% endmacro %}

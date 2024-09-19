@@ -24,4 +24,5 @@
 /* Add new components below */
 @import "./compositions/utils.css" layer(compositions);
 @import "./components/doc-food-component.css" layer(compositions);
+@import "./components/recipe-card.component.css" layer(compositions);
 @import "./components/home.components.css" layer(compositions);

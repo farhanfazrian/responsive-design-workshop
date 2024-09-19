@@ -14,11 +14,9 @@ layout: layouts/base.njk
       </div>
       <div class="recommendation-wrapper">
         <div class="recommendation-wrapper--content">
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe A') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe B') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe C') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe D') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe E') }}
+          {% for i in range(1, 20) %}
+            {{ recipeCard('#', '/assets/Images.png', 'Recipe '+ i,"Recipe "+ i) }}
+          {% endfor %}
         </div>
       </div>
     </section>
@@ -29,35 +27,32 @@ layout: layouts/base.njk
       </div>
       <div class="recommendation-wrapper">
         <div class="recommendation-wrapper--content">
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe A') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe B') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe C') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe D') }}
-          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe E') }}
+          {% for i in range(1, 20) %}
+            {{ recipeCard('#', '/assets/Images.png', 'Recipe'+ i,"Recipe "+ i) }}
+          {% endfor %}
         </div>
-      </div>
-    </section>
-    <section class="home-section">
-      <div class="home-section--header">
-        <h3>This Week Recipe</h3>
-      </div>
-      <div class="grid" style="--gutter: var(--space-s)">
-        <a href="#">
-          <img src="https://placehold.co/600x400" />
-        </a>
-        <a href="#">
-          <img src="https://placehold.co/600x400" />
-        </a>
-        <a href="#">
-          <img src="https://placehold.co/600x400" />
-        </a>
-        <a href="#">
-          <img src="https://placehold.co/600x400" />
-        </a>
-        <a href="#">
-          <img src="https://placehold.co/600x400" />
-        </a>
-      </div>
-    </section>
-  </div>
-</main>
+      </section>
+      <section class="home-section">
+        <div class="home-section--header">
+          <h3>This Week Recipe</h3>
+        </div>
+        <div class="grid" style="--gutter: var(--space-s)">
+          <a href="#">
+            <img src="https://placehold.co/600x400"/>
+          </a>
+          <a href="#">
+            <img src="https://placehold.co/600x400"/>
+          </a>
+          <a href="#">
+            <img src="https://placehold.co/600x400"/>
+          </a>
+          <a href="#">
+            <img src="https://placehold.co/600x400"/>
+          </a>
+          <a href="#">
+            <img src="https://placehold.co/600x400"/>
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
