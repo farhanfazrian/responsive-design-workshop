@@ -1,13 +1,21 @@
+.home-section {
+  padding-top: var(--space-l);
+  padding-bottom: var(--space-l);
+}
+.home-section--header {
+  margin-bottom: var(--space-2xs);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .recommendation-wrapper {
   display: flex;
   overflow-x: auto;
-  border: 1px solid black;
 }
 
-.recommendation-wrapper {
+.recommendation-wrapper--content {
   display: flex;
-  overflow-x: auto;
-  border: 1px solid black;
+  gap: var(--gutter, var(--space-s));
 }
 
 .recommendation-wrapper a {

@@ -1,3 +1,5 @@
-.flex {
-  display: flex;
+.container {
+  max-width: var(--max-width, var(--measure-l));
+  margin-inline: auto;
+  padding: 0 var(--space-s);
 }

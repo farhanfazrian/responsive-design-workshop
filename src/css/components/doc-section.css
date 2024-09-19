@@ -3,8 +3,8 @@
 
 .doc-section__header,
 .doc-section__content {
-  padding: var(--space-m);
-  max-width: var(--measure-l);
+  padding: var(--space-3xs);
+  max-width: var(--measure-2xl);
   margin-inline: auto;
 }
 
