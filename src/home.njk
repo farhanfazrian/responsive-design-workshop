@@ -3,6 +3,8 @@ title: Food Component
 layout: layouts/base.njk
 ---
 
+{%- from "components/recipe-card.njk" import recipeCard -%}
+
 <main id="component" class="[ main ]" tabindex="-1" aria-live="polite">
   <div class="container" style="--max-width: 1240px">
     <section class="home-section">
@@ -12,21 +14,11 @@ layout: layouts/base.njk
       </div>
       <div class="recommendation-wrapper">
         <div class="recommendation-wrapper--content">
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe A') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe B') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe C') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe D') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe E') }}
         </div>
       </div>
     </section>
@@ -37,21 +29,11 @@ layout: layouts/base.njk
       </div>
       <div class="recommendation-wrapper">
         <div class="recommendation-wrapper--content">
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
-          <a href="#">
-            <img src="https://placehold.co/600x400" />
-          </a>
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe A') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe B') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe C') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe D') }}
+          {{ recipeCard('#', 'https://placehold.co/600x400', 'Recipe E') }}
         </div>
       </div>
     </section>
